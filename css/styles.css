@@ -16,6 +16,8 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -44,19 +46,56 @@ body {
 }
 
 /* Site nav */
+
+.logo-header {
+  margin-right: 93px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+}
+
+.site-nav li {
+  margin-right: 50px;
+}
 .site-nav .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   cursor: pointer;
 }
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
 .site-nav .current {
   color: var(--accent-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts li {
+  margin-right: 50px;
+}
+
+.header-contacts .item:last-child {
+  margin-right: 0;
 }
 
 .header-contacts .link {
