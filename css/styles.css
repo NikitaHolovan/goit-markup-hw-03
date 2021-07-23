@@ -22,6 +22,11 @@ body {
 .link {
   text-decoration: none;
 }
+
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 /* Header */
 /* Logo */
 .logo-header {
@@ -47,6 +52,11 @@ body {
 
 /* Site nav */
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+}
 .logo-header {
   margin-right: 93px;
 }
@@ -111,14 +121,17 @@ body {
 /* Section Hero */
 .section-hero {
   background-color: var(--background-hero-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .section-hero .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .primary-button {
   color: var(--primary-white-color);
@@ -132,6 +145,9 @@ body {
   text-align: center;
   position: relative;
   left: 50%;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
 }
 
 .primary-button:hover,
@@ -141,8 +157,19 @@ body {
 }
 
 /* Benefits Section*/
+.section-benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .hidden-heading {
   display: none;
+}
+.benefit-list {
+  display: flex;
+  justify-content: space-between;
+}
+.benefit-list .benefit-box {
+  width: 270px;
 }
 .benefit-list .benefit-title {
   color: var(--primary-text-color);
@@ -150,6 +177,8 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .benefit-list .benefit-description {
@@ -157,13 +186,16 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-
   letter-spacing: 0.03em;
+  margin-top: 10;
+  margin-bottom: 0;
 }
 
 /* What we do Section*/
 .section-about {
   background-color: var(--primary-white-color);
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 .section-about .title {
   color: var(--primary-text-color);
@@ -173,11 +205,17 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Team Section*/
 
 .section-team {
   background-color: var(--background-secondary-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-team .title {
   color: var(--primary-text-color);
@@ -195,6 +233,8 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-team .teammate-position {
@@ -204,6 +244,8 @@ body {
 
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Footer */
 
