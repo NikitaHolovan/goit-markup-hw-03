@@ -386,6 +386,10 @@ body {
   margin-top: 30px;
 }
 
+.portfolio-card {
+  display: block;
+}
+
 .portfolio-box:last-child {
   margin-right: 0;
 }
