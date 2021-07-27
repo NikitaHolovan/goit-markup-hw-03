@@ -329,6 +329,9 @@ body {
 }
 
 /*Portfolio*/
+.portfolio-container {
+  padding-bottom: 94px;
+}
 
 /* Button Section*/
 .button-container {
