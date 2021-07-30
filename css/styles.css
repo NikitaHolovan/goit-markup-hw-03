@@ -16,17 +16,26 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: var(--primary-text-color);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
 .list {
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.link {
-  text-decoration: none;
 }
 
 .title {
-  margin-top: 0;
   margin-bottom: 50px;
 }
 .button {
@@ -43,25 +52,24 @@ body {
 }
 /* Header */
 .header {
+  padding: 24px 0 25px 0;
   border-bottom: 1px solid var(--border-secondary);
 }
 /* Logo */
-.logo-header {
-  color: var(--primary-text-color);
+.logo-header,
+.logo-footer {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  text-decoration: none;
 }
 .logo-footer {
   color: var(--primary-white-color);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
 }
+.logo-header {
+  color: var(--primary-text-color);
+}
+
 .logo {
   color: var(--accent-color);
 }
@@ -95,8 +103,6 @@ body {
 
 .nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -146,7 +152,6 @@ body {
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
-  margin-top: 0;
   margin-bottom: 30px;
   text-transform: uppercase;
 }
@@ -190,8 +195,6 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -202,7 +205,6 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin-top: 10;
-  margin-bottom: 0;
 }
 
 /* What we do Section*/
@@ -230,7 +232,6 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -241,8 +242,6 @@ body {
 
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .team-box {
@@ -278,14 +277,12 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 .footer-contacts .contact-link {
   color: var(--footer-contact);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .footer-contacts .contact-link:hover,
@@ -298,11 +295,8 @@ body {
   color: var(--accent-color);
 }
 
-.list-item {
+.list-item:not(:last-child) {
   margin-bottom: 9px;
-}
-.list-item:last-child {
-  margin-bottom: 0;
 }
 
 /*Portfolio*/
@@ -388,5 +382,4 @@ body {
   line-height: 1.9;
   letter-spacing: 0.03em;
   padding-left: 24px;
-  margin: 0;
 }
